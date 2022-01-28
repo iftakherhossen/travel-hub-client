@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.link {
+  text-decoration: none;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hover {
+  border-bottom: 2px solid transparent;
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hover:hover {
+  color: #111430;
+  border-bottom: 2px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginBtn {
+  background-color: #111430 !important;
+  color: white !important;
+  margin-left: 20px !important;
+  border-bottom: 2px solid transparent;
+}
+
+.txt, .icon {
+  color: #111430 !important;
+}
+
+.text-black {
+  color: black;
+}
+
+.motto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem !important;
+  box-shadow: 0 5px 12px #eee;
+  height: 120px;
+  border-bottom: 2px solid rgba(73, 73, 73, 0.527);
+}
+
+.imgBox {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 9px;
+  bottom: 12px;
+  height: 79.5%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.733);
+  color: #f1f1f1;
+  width: 85%;
+  transition: .5s ease;
+  opacity: 0;
   color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgBox:hover .overlay {
+  opacity: 1;
 }
