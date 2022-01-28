@@ -77,7 +77,6 @@ const Popular = () => {
                                 />
                             </ListItem>
                         </List>
-                        <Button>See More !</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={7} md={4}>

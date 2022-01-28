@@ -1,6 +1,7 @@
 import { Container } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
+import Blogs from '../../Components/Blogs/Blogs';
 import Destinations from '../../Components/Destinations/Destinations';
 import Footer from '../../Components/Footer/Footer';
 import Motto from '../../Components/Motto/Motto';
@@ -16,6 +17,7 @@ const Home = () => {
             <Container>
                 <Motto />
                 <Destinations />
+                <Blogs />
             </Container>
             <Box sx={{ mt: 5, p: 2, textAlign: 'center' }}>
                 <Popular />
